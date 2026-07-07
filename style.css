@@ -354,6 +354,21 @@ body {
   border: 1px solid var(--card-border);
   padding: 4px 12px; border-radius: 6px;
 }
+.project-brief-link {
+  text-decoration: none;
+  color: inherit;
+}
+.project-brief-cta {
+  font-size: 12px;
+  color: var(--primary);
+  margin-top: 6px;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.project-brief-card:hover .project-brief-cta,
+.project-brief-link:hover .project-brief-cta {
+  opacity: 1;
+}
 
 /* ============ 联系 ============ */
 .contact-section { text-align: center; }
